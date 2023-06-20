@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JQuery 01</title>
+</head>
+<body>
+    
+   <h3>Judul</h3>
+   <div id="tampil1">Isi dari tampil 1</div>
+   <div class="tampil1">Isi dari class tampil 1</div>
+
+   <p>Hari ini adalah hari yang sangat melelahkan</p>
+   <div id="tampil2">Sangatt Capek Jederr</div>
+   <div class="tampil2">Konser Sudekatt!</div>
+
+    <script src="jquery.js"></script>
+    <script>
+        //document.getElementById("tampil").innerHTML
+
+        $(document).ready(function(){
+            $("#tampil1").html("Teks yang Baru untuk Element ID");
+            $(".tampil1").html("Teks Pengganti Element Class");
+            $("h3").html("belajar jquery");
+            $("#tampil2").html("Sangatt Capek Jederr");
+            $(".tampil2").html("Konser Sudekatt!");
+
+    });
+    </script>
+</body>
+</html>
